@@ -5,6 +5,6 @@
  */
 int main(void)
 {
-	echo "and that piece of art is useful\" - Dora Korpar, 2015-10-19" 1 > &2;
+	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n") 1 > &2;
 	return (1);
 }
