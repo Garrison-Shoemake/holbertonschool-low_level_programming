@@ -1,5 +1,4 @@
 #include <studio.h>
-
 /**
  * main - entry point of the program
  * Return: return value of main
