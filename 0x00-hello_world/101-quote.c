@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <errno.h>
 /**
  * main - runtime entry point
  * Return: return value 1
  */
 int main(void)
 {
-	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n") 1 > &2;
+	perror("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 	return (1);
 }
