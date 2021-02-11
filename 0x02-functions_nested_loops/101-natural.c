@@ -13,10 +13,10 @@ int main(void)
 	int sum = 0;
 	int sum2 = 0;
 
-	for (a = 3; a <= 1024; a += 3)
+	for (a = 3; a < 1024; a += 3)
 		sum += a;
 
-	for (b = 5; b <= 1024; b += 5)
+	for (b = 5; b < 1024; b += 5)
 		sum2 += b;
 
 	printf("%d\n", (sum + sum2));
