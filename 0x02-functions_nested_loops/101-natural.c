@@ -19,6 +19,6 @@ int main(void)
 	for (b = 5; b <= 1024; b += 5)
 		sum2 += b;
 
-	printf("%d\n", sum + sum2);
+	printf("%d\n", (sum + sum2));
 	return (0);
 }
