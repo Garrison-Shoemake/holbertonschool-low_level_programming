@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_square - start of funtion
+ * print_diagonal - start of funtion
  * @n: integer to test with
  *
  */
