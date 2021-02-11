@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
  * print_square - start of funtion
- * @size: integer to test with
+ * @n: integer to test with
  *
  */
 
-void print_square(int size)
+void print_diagonal(int n)
 {
 	int i;
 	int j;
