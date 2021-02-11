@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- *
- *
+ * print_line - syntax start
+ * @n: integer to determine value
  */
 void print_line(int n)
 {
