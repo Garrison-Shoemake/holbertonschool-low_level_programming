@@ -1,13 +1,13 @@
 #include "holberton.h"
+
 /**
  * string_toupper - function name
- * Return: return value of function
  * @str: string pointer
- *
+ * Return: return value of function
  */
 char *string_toupper(char *str)
 {
-	int n;
+	int n = 0;
 
 	while (str[n] != '\0')
 	{
