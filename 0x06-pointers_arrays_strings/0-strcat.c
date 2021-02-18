@@ -3,11 +3,11 @@
  * _strcat - function name
  * @dest: destination pointer
  * @src: source pointer
- *
+ * Return: retrun pointer
  */
 char *_strcat(char *dest, char *src)
 {
-	char* out = dest;
+	char *out = dest;
 
 	if ((dest != '\0') && (src != '\0'))
 	{
