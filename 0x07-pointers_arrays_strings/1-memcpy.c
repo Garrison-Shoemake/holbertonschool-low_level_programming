@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- *
- *
- *
- *
- *
+ * _memcpy - function name
+ * @dest: destination to copy
+ * @src: source to copy from
+ * @n: number of times to copy
+ * Return: returns destination
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
