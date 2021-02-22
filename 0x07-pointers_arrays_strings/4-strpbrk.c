@@ -1,9 +1,9 @@
 #include "holberton.h"
 char *_strchr(char *s, char c);
 /**
- * _strchr - function name
+ * _strpbrk - function name
  * @s: string to check
- * @c: what we are checking the string for
+ * @accept: what we are checking the string for
  * Return: return value
  */
 
