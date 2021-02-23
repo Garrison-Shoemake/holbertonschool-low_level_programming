@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- *
- *
- *
+ * print_diagsums - function name
+ * @a: table to check
+ * @size: size of table for algorithm
  *
  *
  */
@@ -18,7 +18,7 @@ void print_diagsums(int *a, int size)
 		k += a[i];
 	}
 
-	for (i = 0, j = 0; i < (size * size) - size + 1; i += (size - 1))
+	for (i = (size - 1), j = 0; i < (size * size) - size + 1; i += (size - 1))
 	{
 		j += a[i];
 	}
