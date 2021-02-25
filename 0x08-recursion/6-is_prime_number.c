@@ -6,9 +6,9 @@ int prime(int j, int i);
  * Return: calls helper func for output
  *
  */
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
-	return (prime(n, 0));
+	return (prime(n, 2));
 }
 /**
  * prime - function name
@@ -19,7 +19,7 @@ int is_prime_number(int n);
  */
 int prime(int j, int i)
 {
-	if (i < 2)
+	if (j < 2)
 		return (0);
 	if (j % i == 0)
 		return (0);
