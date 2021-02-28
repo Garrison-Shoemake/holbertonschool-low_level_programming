@@ -14,6 +14,7 @@ int main(int argc __attribute__((unused)), char **argv __attribute__((unused)))
 	while (count < argc)
 	{
 		printf("%s\n", argv[count]);
-		count++;}
+		count++;
+	}
 		return (0);
 }
