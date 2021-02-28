@@ -8,11 +8,15 @@
  */
 int main(int argc __attribute__((unused)), char **argv __attribute__((unused)))
 {
-	int count = 0;
+	int count;
 
-	while (count < argc)
+
+	if (argc > 1)
 	{
-		count++;
+		for (count = 0; count < argc; count++)
+		{
+
+		}
 	}
 	printf("%d\n", count);
 	return (0);
