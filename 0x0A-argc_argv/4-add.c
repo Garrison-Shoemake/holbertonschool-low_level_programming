@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * main - main function name
- * @argc - argument count
+ * @argc: argument count
  * @argv: arguments passed
  * Return: return value
  *
@@ -37,5 +37,5 @@ int main(int argc, char **argv)
 			}
 		}
 	}
-	return(0);
+	return (0);
 }
