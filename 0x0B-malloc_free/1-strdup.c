@@ -13,7 +13,7 @@ int _strlen(char *str)
 	{
 
 	}
-	return (i + 1);
+	return (i);
 }
 /**
  * _strdup - function name
@@ -26,13 +26,12 @@ char *_strdup(char *str)
 	char *ar;
 	int j;
 
-
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	ar = malloc(i * sizeof(char));
+	ar = malloc(i * sizeof(char) + 1);
 
 	if (ar == NULL)
 	{
