@@ -7,7 +7,8 @@
  * @height: height of the grid
  *
  */
-void free_grid(int **grid, int height __attribute__((unused)))
+void free_grid(int **grid, int height)
 {
+	(void)height;
 	free(grid);
 }
