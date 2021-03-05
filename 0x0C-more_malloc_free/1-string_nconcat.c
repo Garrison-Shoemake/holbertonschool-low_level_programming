@@ -26,7 +26,9 @@ unsigned int _strlen(char *str)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	unsigned int i = 0, unsigned int j, unsigned int k;
+	unsigned int i = 0;
+	unsigned int j;
+	unsigned int k;
 
 	if (n >= _strlen(s2))
 	{
@@ -43,7 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (ptr == NULL)
 	{
-		free(ptr);
 		return (NULL);
 	}
 	if (s1 == NULL || s2 == NULL)
