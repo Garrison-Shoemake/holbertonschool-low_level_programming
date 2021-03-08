@@ -6,7 +6,7 @@
  *
  *
  */
-void main()
+void main(void)
 {
 	printf(__FILE__);
 }
