@@ -10,8 +10,8 @@
 int main(int argc, char *argv[])
 {
 	int (*fun)(int, int);
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
+	int a;
+	int b;
 
 	if (argc != 4)
 	{
@@ -26,7 +26,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 	printf("%d\n", fun(a, b));
 	return (0);
 
