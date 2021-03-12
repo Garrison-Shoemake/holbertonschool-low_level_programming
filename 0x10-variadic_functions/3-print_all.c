@@ -35,7 +35,6 @@ void printstr(va_list list)
 	if (!list)
 	{
 		printf("(nil)");
-		return;
 	}
 	printf("%s", va_arg(list, char *));
 }
