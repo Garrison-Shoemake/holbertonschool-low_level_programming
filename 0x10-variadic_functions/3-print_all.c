@@ -3,30 +3,39 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
+ * printchar - function name
+ * @list: list from print_all to print
  */
 void printchar(va_list list)
 {
 	printf("%c", va_arg(list, int));
 }
 /**
+ * printint - function name
+ * @list: list from print_all to print
  */
 void printint(va_list list)
 {
 	printf("%d", va_arg(list, int));
 }
 /**
+ * printflt - function name
+ * @list: list from print_all to print
  */
 void printflt(va_list list)
 {
 	printf("%f", va_arg(list, double));
 }
 /**
+ * printstr - function name
+ * @list: list from print_all to print
  */
 void printstr(va_list list)
 {
 	if (!list)
 	{
 		printf("(nil)");
+		return;
 	}
 	printf("%s", va_arg(list, char *));
 }
@@ -49,7 +58,7 @@ void print_all(const char * const format, ...)
 		{NULL, NULL},
 	};
 
-	va_start (list, format);
+	va_start(list, format);
 
 	while (format && format[i])
 	{
