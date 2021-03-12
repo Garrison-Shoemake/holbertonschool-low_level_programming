@@ -32,11 +32,14 @@ void printflt(va_list list)
  */
 void printstr(va_list list)
 {
-	if (!list)
+	char *ptr = va_arg(list, char *);
+
+	if (!ptr)
 	{
 		printf("(nil)");
+		return;
 	}
-	printf("%s", va_arg(list, char *));
+	printf("%s", ptr);
 }
 /**
  * print_all - funciton name, prints what is passed to it
