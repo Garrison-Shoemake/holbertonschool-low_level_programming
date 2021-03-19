@@ -34,7 +34,7 @@ list_t *add_node(list_t **head, const char *str)
 	*head = new;
 
 
-	return (new->next);
+	return (*head);
 }
 /**
  * _strlen - function name, counts a string
