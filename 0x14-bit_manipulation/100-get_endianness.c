@@ -9,8 +9,8 @@ int get_endianness(void)
 
 	char *y = (char *)&x;
 
-	if (*y)
-		return (1);
-	else
+	if (*y + 48 == 48)
 		return (0);
+	else
+		return (1);
 }
