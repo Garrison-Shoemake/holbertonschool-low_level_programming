@@ -4,7 +4,7 @@
  * @n: returned from main function
  * Return: returns count to main
  */
-unsigned int helper(unsigned int n)
+unsigned int helper(unsigned long int n)
 {
 	unsigned int count = 0;
 
