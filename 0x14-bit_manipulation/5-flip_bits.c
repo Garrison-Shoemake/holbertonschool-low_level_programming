@@ -6,7 +6,7 @@
  */
 unsigned int helper(unsigned int n)
 {
-	int count = 0;
+	unsigned int count = 0;
 
 	while (n > 0)
 	{
