@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-
 /**
  * cp - function name, copies from one file to another
  * @argc: number of arguments, always 3, 0 - cp, 1 from, 2 - to
