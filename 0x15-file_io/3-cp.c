@@ -29,7 +29,7 @@ int cp(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	while ((count = read(from, buffer, 1024)) > 0);
+	while ((count = read(from, buffer, 1024)) > 0)
 	{
 		if (write(to, buffer, count) != count)
 		{
