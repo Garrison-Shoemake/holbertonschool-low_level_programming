@@ -5,7 +5,7 @@
  * @argv: arguments as names to copy file from and to
  * Return: return 0 on success, exit if fail
  */
-int cp(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int from, to, count;
 	char buffer[1024];
