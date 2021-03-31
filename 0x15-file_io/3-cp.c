@@ -35,7 +35,7 @@ int cp(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	wr = write(argv[1], argv[2], buffer);
+	wr = write(from, buffer, 1024);
 	if (wr == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
