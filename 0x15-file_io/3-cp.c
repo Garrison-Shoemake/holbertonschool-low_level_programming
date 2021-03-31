@@ -7,7 +7,7 @@
  */
 int cp(int argc, char *argv[])
 {
-	int from, to, wr, rd, count;
+	int from, to, count;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -35,7 +35,6 @@ int cp(int argc, char *argv[])
 			exit(99);
 		}
 	}
-
 	if (count == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
