@@ -9,7 +9,7 @@
  */
 int cp(int argc, char *argv[])
 {
-	int from, to, wr, rd;
+	int from, to, wr, rd, count;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -17,29 +17,31 @@ int cp(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	from = open(argv[1], O_RDWR);
+	from = open(argv[1], O_RDONLY);
 	if (from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	to = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 0664);
+	to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	rd = read(from, buffer, 1024);
-	if (rd == -1)
+	while ((count = read(from, buffer, 1024)) > 0);
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
+		if (write(to, buffer, count) != count)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
 	}
-	wr = write(from, buffer, 1024);
-	if (wr == -1)
+
+	if (count == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
 	if (close(from) == -1)
 	{
