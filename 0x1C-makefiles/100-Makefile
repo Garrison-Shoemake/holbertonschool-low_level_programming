@@ -4,7 +4,7 @@ OBJ = $(SRC:.c=.o)
 NAME = holberton
 
 all: $(OBJ)
-	$(CC) $(OBJ) -Wall -Werror -Wextra -pedantic -o $(NAME)
+	$(CC) $(OBJ) -Wall -Werror -Wextra -pedantic $(NAME)
 
 clean:
 	$(RM) *~ $(NAME)
