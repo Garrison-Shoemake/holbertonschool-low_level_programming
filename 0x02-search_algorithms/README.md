@@ -1,0 +1,1 @@
+This is the README for the 0x02-search_algorithms project
